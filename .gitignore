@@ -1,0 +1,24 @@
+##############################
+# Dependencies
+##############################
+node_modules
+
+##############################
+# Build
+##############################
+dist
+
+##############################
+# Coverage directory used by tools like istanbul
+##############################
+coverage
+.nyc_output
+coverage.*
+
+##############################
+# Errors and Logs
+##############################
+.npm
+logs
+*.log
+npm-debug.log*

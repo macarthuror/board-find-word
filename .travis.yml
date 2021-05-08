@@ -1,0 +1,6 @@
+language: node_js
+install:
+script:
+  - npm install codecov -g
+after_success:
+  - codecov
