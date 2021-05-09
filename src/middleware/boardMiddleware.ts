@@ -48,10 +48,6 @@ export default async function validationMiddleware(req: Request, res: Response, 
     return typeof value === 'string' && regex.test(value)
 }
 
-function isValidString(value: String): Boolean {
-    return typeof value === 'string'
-}
-
 function isArray(value: any): Boolean {
     return Array.isArray(value)
 }
