@@ -12,19 +12,18 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <h1 align="center">Find a Word in a Board</h1>  
-  <h2 align="center">Search a word in a 2D matrix of letters (characters)</h2>
+  <h1 align="center">Busqueda de palabra dentro de una matriz</h1>  
+  <h2 align="center">Busca una palabra en una matriz 2D de letras</h2>
 
   <p align="center">
-    <a href="https://github.com/macarthuror/board-find-word/issues/new?assignees=macarthuror&labels=bug&template=---1-report-an-issue.md&title=-+%F0%9F%90%9B">Report Bug 🐛</a>
+    <a href="https://github.com/macarthuror/board-find-word/issues/new?assignees=macarthuror&labels=bug&template=---1-report-an-issue.md&title=-+%F0%9F%90%9B">Reporta un problema 🐛</a>
     ·
-    <a href="https://github.com/macarthuror/board-find-word/issues/new?assignees=macarthuror&labels=idea&template=---2-share-an-idea.md&title=-+%F0%9F%92%A1">Request Feature (Idea) 💡</a>
+    <a href="https://github.com/macarthuror/board-find-word/issues/new?assignees=macarthuror&labels=idea&template=---2-share-an-idea.md&title=-+%F0%9F%92%A1">¿Alguna idea para el proyecto? 💡</a>
   </p>
 </p>
 
-<a href="https://github.com/macarthuror/board-find-word/blob/main/lang/ES.md">📝 Documentación en español</a>
+<a href="https://github.com/macarthuror/board-find-word">📝 Docs in english</a>
 <br>
-
 <!-- TABLE OF CONTENTS -->
 <details open="open">
   <summary><b>Tabla de contenido</b></summary>
