@@ -9,8 +9,7 @@
     "dev": "nodemon",
     "test": "jest",
     "test:w": "jest --watchAll",
-    "test:w:c": "jest --watchAll --verbose false",
-    "posttest": "nyc report --reporter=json"
+    "test:w:c": "jest --watchAll --verbose false"
   },
   "nodemonConfig": {
     "watch": [
