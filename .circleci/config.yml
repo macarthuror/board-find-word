@@ -33,8 +33,6 @@ jobs:
           keys:
             - yarn-packages-{{ checksum "yarn.lock" }}
       - run:
-          name: Install Dependencies
-          command: yarn install --immutable
           name: Run test
           command: yarn test
       - save_cache:
