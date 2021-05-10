@@ -9,9 +9,9 @@
 		"terminal.integrated.defaultProfile.linux": "/bin/bash",
 	},
 
-	"extensions": [
-		"dbaeumer.vscode-eslint"
-	],
+	"extensions": [],
+
+	"forwardPorts": [9009],
 
 	"portsAttributes": {
 		"3000": {

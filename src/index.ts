@@ -3,7 +3,7 @@ import boardController from './controllers/boardController'
 import boardMiddleware from './middleware/boardMiddleware'
 import consola from 'consola'
 
-const PORT = process.env.PORT || 8000
+const PORT = process.env.PORT || 9009
 
 const app: Application = express()
 
