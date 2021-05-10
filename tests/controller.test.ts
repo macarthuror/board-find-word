@@ -17,7 +17,8 @@ describe('Validation Middleware', () => {
             }
         }
         mockResponse = {
-            json: jest.fn()
+            json: jest.fn(),
+            send: jest.fn()
         }
     })
 
@@ -39,6 +40,76 @@ describe('Validation Middleware', () => {
         boardController(mockRequest as Request, mockResponse as Response)
 
         expect(mockResponse.json).toBeCalledWith(expected)
+        expect(mockResponse.statusCode).toBe(expectedStatus)
+    })
+
+    test('Word of one letter', () => {
+        mockRequest.body.word = 'b'
+
+        const expected = true
+        const expectedStatus = 200
+
+        boardController(mockRequest as Request, mockResponse as Response)
+
+        expect(mockResponse.send).toBeCalledWith(expected)
+        expect(mockResponse.statusCode).toBe(expectedStatus)
+    })
+
+    test('Complete word "abcced"', () => {
+        const expected = true
+        const expectedStatus = 200
+
+        boardController(mockRequest as Request, mockResponse as Response)
+
+        expect(mockResponse.send).toBeCalledWith(expected)
+        expect(mockResponse.statusCode).toBe(expectedStatus)
+    })
+
+    test('Complete word "see"', () => {
+        mockRequest.body.word = 'see'
+
+        const expected = true
+        const expectedStatus = 200
+
+        boardController(mockRequest as Request, mockResponse as Response)
+
+        expect(mockResponse.send).toBeCalledWith(expected)
+        expect(mockResponse.statusCode).toBe(expectedStatus)
+    })
+
+    test('Complete word "asfda"', () => {
+        mockRequest.body.word = 'asfda'
+
+        const expected = true
+        const expectedStatus = 200
+
+        boardController(mockRequest as Request, mockResponse as Response)
+
+        expect(mockResponse.send).toBeCalledWith(expected)
+        expect(mockResponse.statusCode).toBe(expectedStatus)
+    })
+
+    test('Shoud Fail- Complete word "abcb"', () => {
+        mockRequest.body.word = 'abcb'
+
+        const expected = false
+        const expectedStatus = 200
+
+        boardController(mockRequest as Request, mockResponse as Response)
+
+        expect(mockResponse.send).toBeCalledWith(expected)
+        expect(mockResponse.statusCode).toBe(expectedStatus)
+    })
+
+    test('Shoud Fail- Complete word "aba"', () => {
+        mockRequest.body.word = 'aba'
+
+        const expected = false
+        const expectedStatus = 200
+
+        boardController(mockRequest as Request, mockResponse as Response)
+
+        expect(mockResponse.send).toBeCalledWith(expected)
         expect(mockResponse.statusCode).toBe(expectedStatus)
     })
 
